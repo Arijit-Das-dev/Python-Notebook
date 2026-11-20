@@ -34,4 +34,22 @@ is_True = True
 is_False = False
 
 
-# 
+# Sequence type
+arr = [1, 2, 3, 4]  # list
+print(type(arr))
+
+nums = {1, 2, 3, 4} # set
+print(type(nums))
+
+
+# mapping type
+data = {
+    "name":"Arijit",
+    "id":12
+}
+print((data))
+
+
+# set type
+x = (1, 2, 3, 4)
+print(type(x))
