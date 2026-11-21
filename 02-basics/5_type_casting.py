@@ -1,8 +1,27 @@
 # ==========================
-# Type Casting
+# Type Casting & Type Conversion
 # ==========================
 
+# Type Casting
+"""
+There are two types of type casting ->
+    - Implicit Type Casting
+    - Explicit Type Casting
+"""
 
+''' Implicit Type Casting '''
+num1 = 12
+num2 = 12.0
+
+result1 = num1 + num2
+print(result1)
+
+
+''' Explicit Type Casting '''
+print(int(result1))
+
+
+# Type Conversion
 # int to str
 num = 12
 print(str(num))
