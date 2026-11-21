@@ -7,3 +7,4 @@
 name = str(input("Enter your name : "))
 age = int(input("Enter your age : "))
 longitutde = float(input("Enter Longitude : "))
+imag = complex(input("Enter complex number : "))
