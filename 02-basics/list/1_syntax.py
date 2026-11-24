@@ -14,3 +14,4 @@ print(is_active)
 print(len(fruits))
 print(len(nums))
 print(len(is_active))
+

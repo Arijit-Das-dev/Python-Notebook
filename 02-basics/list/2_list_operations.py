@@ -10,8 +10,6 @@ print(fruits[0])    # apple
 print(fruits[1])    # banana
 
 
-
 # change list items
 fruits[0] = "mango"
 print(fruits)
-
