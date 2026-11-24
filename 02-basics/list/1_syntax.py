@@ -11,10 +11,15 @@ print(nums)
 is_active = [True, False]
 print(is_active)
 
+
+# count elements inside list
 print(len(fruits))
 print(len(nums))
 print(len(is_active))
 
+
+# get the type
+print(type(fruits))
 
 lists = [1, True, "hello", 9.09]
 print(lists)
