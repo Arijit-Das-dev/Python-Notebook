@@ -2,7 +2,7 @@
 # 1. Loop List
 # ==========================================
 
-# access list items
+
 fruits = ["apple", "banana", "orange", "graps", "goava"]
 
 for i in range(0, len(fruits)):
