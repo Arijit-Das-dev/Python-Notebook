@@ -67,4 +67,26 @@ print("John" in text)
 print("Alex" not in text)
 
 
-# 
+# Logical Operators
+"""
+and 
+or 
+not
+"""
+print(a>b and b<a)
+print(a>b or b>a)
+
+if not(a<b):
+    print("True")
+
+
+# Identity Operators
+"""
+is 
+is not
+"""
+a = [1, 2]
+b = [1, 2]
+
+print(a is b)
+print(a is not b)
