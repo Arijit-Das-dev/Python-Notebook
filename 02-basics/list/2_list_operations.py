@@ -13,3 +13,8 @@ print(fruits[1])    # banana
 # change list items
 fruits[0] = "mango"
 print(fruits)
+
+
+# add list items
+fruits += [1]
+print(fruits)
