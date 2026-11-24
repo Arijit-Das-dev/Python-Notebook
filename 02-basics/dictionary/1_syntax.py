@@ -6,7 +6,6 @@
 dict = {
     key : value
 }
-
 """
 students = {
     "id":1,
@@ -17,6 +16,7 @@ students = {
 print(students)
 
 # count how many keys are present 
-print(len(students))
+print(len(students))    # 4
 
-# 
+# check type 
+print(type(students))   # <class 'dict'>
