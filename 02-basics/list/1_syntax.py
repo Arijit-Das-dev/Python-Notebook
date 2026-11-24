@@ -15,3 +15,6 @@ print(len(fruits))
 print(len(nums))
 print(len(is_active))
 
+
+lists = [1, True, "hello", 9.09]
+print(lists)
