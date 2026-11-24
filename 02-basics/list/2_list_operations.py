@@ -18,3 +18,9 @@ print(fruits)
 # add list items
 fruits += [1]
 print(fruits)
+
+
+# remove list items
+fruits.remove(1)    # removes by specific element
+fruits.pop()        # removes the last item
+del fruits[0]       # removing by del keyword
