@@ -28,4 +28,4 @@ del students
 try:
     print(students)
 except NameError as n:
-    print(str(n))       
+    print(str(n))
