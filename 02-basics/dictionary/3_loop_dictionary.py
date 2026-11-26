@@ -20,12 +20,12 @@ for key, value in user_profile.items():
     print(f"{key} : {value}")
 
 # print only keys
-for keys in user_profile:   # also can use .keys() function => user_profile.keys()
+for keys in user_profile:       # also can use .keys() function => user_profile.keys()
     print(keys)
 
-# print only values
-for values in user_profile.values():
-    print(values)
+# print only values         
+for keys in user_profile:       # also can user .values() function => user_profiles.values()
+    print(user_profile[keys])
 
 # unpack list items inside dictionary
 for values in user_profile["roles"]:
