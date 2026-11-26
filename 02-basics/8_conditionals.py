@@ -47,3 +47,6 @@ if x > 0:
 a = 2
 b = 330
 print("A") if a > b else print("B")
+
+result = True if 10>5 else False
+print(result)
