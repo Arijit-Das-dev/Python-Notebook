@@ -41,3 +41,9 @@ if x > 0:
     if x %2 == 0:
         if not(x%2 != 0):
             print(x)
+
+
+# shorthand if 
+a = 2
+b = 330
+print("A") if a > b else print("B")
