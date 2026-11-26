@@ -21,6 +21,10 @@ print(students["name"])
 del students["id"]
 print(students)
 
+# add items
+students["address"] = "Washington"
+print(students)
+
 # delete entire dictionary
 del students
 
