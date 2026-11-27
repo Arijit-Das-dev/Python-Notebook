@@ -2,6 +2,8 @@
 # 1. match case
 # ==========================================
 
+
+# example 1
 marks = int(input("Enter your marks : "))
 
 match marks:
@@ -19,3 +21,14 @@ match marks:
         print("Grade D")
     case _:
         print("Failed , better luck next time !")
+
+# example 2
+day = int(input("Enter day : "))
+
+match day:
+    case d if d >= 6 and d <= 7:
+        print("Week off")
+    case d if d >= 1 and d <= 5:
+        print("week day")
+    case _:
+        print("Invalid day!")
