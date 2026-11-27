@@ -19,7 +19,16 @@ while i <= 10:
 # continue statement
 i = 0
 while i <= 10:
+    i+=1
     if i == 5:
         continue
     print(i)
+
+# else: statement 
+# break statement
+i = 0
+while i <= 10:
+    print(i)
     i+=1
+else:
+    print("completed")
