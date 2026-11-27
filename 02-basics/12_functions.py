@@ -15,6 +15,7 @@ Function naming rules:
         - myFunction() and myfunction() is different.
 """
 
+# ==================================================================================================================================== #
 # basic syntax
 def greet():
     return "good morning"
@@ -32,3 +33,32 @@ def send_message(msg):
 
 message = send_message(msg="hi, this is alex")
 print(message)
+
+
+# ==================================================================================================================================== #
+""" functions with arguements """
+# -> parameters
+# -> arguements
+
+def say_hello(name):            # <- variable inside first bracket is called -> parameter
+    return f"hello {name}"
+
+names = ["John", "Alex"]
+for name in names:
+    print(say_hello(name=name)) # The value we are passing is called arguements
+
+""" There are two types of arguements are present """
+# -> keyword arguements
+# -> positional arguements
+
+
+# keyword arguements
+# order of arguements can be any order
+def myFunction(name, email):
+    return f"{name}, {email}"
+print(myFunction(name="Alex", email="alex@gmail.com"))
+
+
+# positional arguements
+# order of arguments should be in correct order
+print(myFunction("Alex", "alex@gmail.com"))
