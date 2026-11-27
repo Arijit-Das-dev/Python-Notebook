@@ -101,7 +101,14 @@ user_profile = {
 mapping(user_profile)
 
 
-# positional only arguements
+# positional-only arguements
+
+"""
+positional arguements - def func(val, /)
+keyword arguements - def func(*, val)
+
+"""
+
 def my_tool(tools, /):
     for key, value in tools.items():
         print(f"{key} : {value}")
@@ -113,3 +120,11 @@ tools = {
 }
 # you can not use 
 my_tool(tools)
+
+
+# keyword-only arguements
+def subtract(*,a, b):
+    return a-b
+
+sub = subtract(a=2, b=5)
+print(sub)
