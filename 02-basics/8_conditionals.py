@@ -42,6 +42,17 @@ if x > 0:
         if not(x%2 != 0):
             print(x)
 
+is_active = True
+is_loggedin = False
+if is_active:
+    print("active status : ", is_active)
+    if not is_loggedin:
+        print("logged in status", is_loggedin)
+    else:
+        print("logged in")
+else:
+    print("Not Avtive")
+
 
 # shorthand if 
 a = 2
