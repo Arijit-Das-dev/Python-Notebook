@@ -57,3 +57,40 @@ for i in range(0, len(nums)-1):
     for j in range(i+1, len(nums)):
         if nums[i] + nums[j] == 5:
             print(nums[i], nums[j])
+
+
+# continue and break statement 
+# continue skips iteration
+# break stops iteration
+for i in range(0, 6):
+    if i == 3:
+        continue
+    print(i)
+
+for i in range(0, 6):
+    if i == 3:
+        break
+    print(i)
+
+
+# else : statement after for loop
+for i in range(10, 21):
+    print(i)
+else:
+    print("finally stopped")
+
+
+# here else: statement will not work because loop has stopped by break statement
+for i in range(10, 25):
+    print(i)
+    break
+else:
+    print("finally stopped")
+
+# else: statement works with continue statement
+for k in range(10, 16):
+    if k == 14:
+        continue
+    print(k)
+else:
+    print("finally stopped")
