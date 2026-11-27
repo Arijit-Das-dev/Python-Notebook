@@ -99,3 +99,17 @@ user_profile = {
     "last_login": "2026-11-26"
 }
 mapping(user_profile)
+
+
+# positional only arguements
+def my_tool(tools, /):
+    for key, value in tools.items():
+        print(f"{key} : {value}")
+
+tools = {
+    1:"get_weather",
+    2:"Get_news",
+    3:"get_data"
+}
+# you can not use 
+my_tool(tools)
