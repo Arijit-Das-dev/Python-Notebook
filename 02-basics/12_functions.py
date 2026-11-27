@@ -63,3 +63,39 @@ print(myFunction(name="Alex", email="alex@gmail.com"))
 # order of arguments should be in correct order
 print(myFunction("Alex", "alex@gmail.com"))
 
+
+# mixing positional and keyword arguements
+# positional arguements must come before keyword arguements
+def add(a, b):
+    return a+b
+
+addition = add(13, b=12)
+print(addition)
+
+
+# passing different data types
+def show_items() -> list:
+    fruits = ["apple", "banana"]
+    return fruits
+items = show_items()
+print(items[0])
+print(items[1])
+
+
+def mapping(details) -> dict:
+    for keys in details:
+        print(keys, ":" ,details[keys])
+
+user_profile = {
+    "user_id": 1042,
+    "username": "Alex",
+    "full_name": "Alex",
+    "age": 27,
+    "email": "Alex@example.com",
+    "city": "London",
+    "is_active": True,
+    "account_balance": 4500.75,
+    "roles": ["admin", "editor"],
+    "last_login": "2026-11-26"
+}
+mapping(user_profile)
