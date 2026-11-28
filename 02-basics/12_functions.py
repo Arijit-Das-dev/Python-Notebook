@@ -184,6 +184,7 @@ my_function(name = "Arijit", ids = 1, sec = "A")
 function scope
 """
 
+# Local scope
 # variable created inside a function is called local scope
 def local_scope():
     x = 100
@@ -191,6 +192,7 @@ def local_scope():
 print(local_scope())
 
 
+# global scope
 # variable created outside of the function is called global scope
 y = 50
 def global_scope():
@@ -205,3 +207,15 @@ def example():
     return z
 print(z)
 print(example())
+
+
+# you can make a variable global by assigning "global" keyword before variable, the value will same for both which is written inside the function.
+e = 10
+def example2():
+    global e
+    e = 30
+    return e
+print(example2())
+print(e)
+
+# ==================================================================================================================================== #
