@@ -16,18 +16,21 @@ Function naming rules:
 """
 
 # ==================================================================================================================================== #
+
 # basic syntax
 def greet():
     return "good morning"
 print(greet())
 
 
+# example 1
 def to_celcius(temp):
     celsius = (temp - 32) * 5 / 9
     return celsius
 print(to_celcius(temp=77))
 
 
+# example 2
 def send_message(msg):
     return f"message : {msg}"
 
@@ -36,10 +39,12 @@ print(message)
 
 
 # ==================================================================================================================================== #
+
 """ functions with arguements """
 # -> parameters
 # -> arguements
 
+# example 1
 def say_hello(name):            # <- variable inside first bracket is called -> parameter
     return f"hello {name}"
 
@@ -74,6 +79,7 @@ print(addition)
 
 
 # passing different data types
+# List
 def show_items() -> list:
     fruits = ["apple", "banana"]
     return fruits
@@ -82,7 +88,10 @@ print(items[0])
 print(items[1])
 
 
-def mapping(details) -> dict:
+# dictionary
+from typing import Any
+def mapping(details) -> dict[str, Any]:
+    
     for keys in details:
         print(keys, ":" ,details[keys])
 
@@ -102,7 +111,6 @@ mapping(user_profile)
 
 
 # positional-only arguements
-
 """
 positional arguements - def func(val, /)
 keyword arguements - def func(*, val)
@@ -128,3 +136,33 @@ def subtract(*,a, b):
 
 sub = subtract(a=2, b=5)
 print(sub)
+
+
+# ==================================================================================================================================== #
+
+"""
+*args
+**kargs
+"""
+# example 1
+def example(*args):
+    return args
+# *args returns tuple ()
+print(type(example("alex", 1, 12)))
+
+
+# example 2
+def greet(*names):
+    for name in names:
+        print("hello", name)
+greet("alex", "arijit")
+
+
+# example 3
+def add(*nums):
+    summ = 0
+    for i in range(0, len(nums)):
+        summ = summ + nums[i]
+    return summ
+print(add(1, 2, 3, 4))
+
