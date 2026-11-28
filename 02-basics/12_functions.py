@@ -169,7 +169,6 @@ def add(*nums):
 print(add(1, 2, 3, 4))
 
 
-
 # **kwargs
 def my_function(**kargs):
     for key, value in kargs.items():
@@ -177,3 +176,32 @@ def my_function(**kargs):
 
 # kwargs returns dictionary
 my_function(name = "Arijit", ids = 1, sec = "A")
+
+
+# ==================================================================================================================================== #
+
+"""
+function scope
+"""
+
+# variable created inside a function is called local scope
+def local_scope():
+    x = 100
+    return x
+print(local_scope())
+
+
+# variable created outside of the function is called global scope
+y = 50
+def global_scope():
+    return y
+print(global_scope())
+
+
+# if you change the same variable value inside and outside of the function , it will treat them as two seperate value
+z = 10
+def example():
+    z = 20
+    return z
+print(z)
+print(example())
