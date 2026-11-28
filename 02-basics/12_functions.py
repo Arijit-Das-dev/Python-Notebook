@@ -144,6 +144,8 @@ print(sub)
 *args
 **kargs
 """
+
+# *args
 # example 1
 def example(*args):
     return args
@@ -166,3 +168,12 @@ def add(*nums):
     return summ
 print(add(1, 2, 3, 4))
 
+
+
+# **kwargs
+def my_function(**kargs):
+    for key, value in kargs.items():
+        print(key, value)
+
+# kwargs returns dictionary
+my_function(name = "Arijit", ids = 1, sec = "A")
